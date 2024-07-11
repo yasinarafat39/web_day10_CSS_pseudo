@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element</title>
+
+    <style>
+      h2::after {
+        content: ".pdf";
+        color: tomato;
+        font-size: 20px;
+      }
+
+      h2::before {
+        content: "Start: ";
+      }
+      h1 {
+        font-size: 200px;
+        text-align: center;
+      }
+
+      p::first-letter {
+        font-size: 2em;
+        text-indent: 80px;
+      }
+
+      p::first-line {
+        background-color: bisque;
+      }
+
+      ::selection {
+        background-color: yellow;
+      }
+
+      input::placeholder {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Headin-1</h2>
+    <h2>Headin-2</h2>
+    <h2>Headin-3</h2>
+
+    <h1>21</h1>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+      itaque, necessitatibus fugit dignissimos obcaecati quae neque nam dolores
+      minima eos.
+    </p>
+    <p>
+      Nobis tenetur voluptates architecto doloribus illo officia soluta, laborum
+      similique, veritatis, quis ducimus ullam nostrum excepturi consequuntur
+      laudantium quod molestias?
+    </p>
+    <p>
+      Quo nam illo distinctio voluptate sapiente. Similique, veritatis libero ut
+      voluptates expedita dolorem minima possimus, labore vel iure tenetur
+      consequuntur.
+    </p>
+
+    <input type="text" placeholder="this is placeholder text" />
+    <input type="text" placeholder="this is placeholder text" />
+  </body>
+</html>
